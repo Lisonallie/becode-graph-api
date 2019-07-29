@@ -3,8 +3,9 @@
     
     for ($i = 0; $i < 11; $i++) {
         $yvalue = mt_rand(-5, 20);
-         $json = "[$i, $yvalue]";
+         $json = [$i, $yvalue];
          array_push($randomnum, $json);
         }
         echo json_encode($randomnum);
+        header("Content-type:application/json");
 ?>
