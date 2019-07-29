@@ -1,9 +1,10 @@
 <?php
-    $yvalue = mt_rand(-20, 20);
     $randomnum = [];
-
-    for ($i = 0; $i < $randomnum.length; $i++) {
+    
+    for ($i = 0; $i < 11; $i++) {
+        $yvalue = mt_rand(-5, 20);
          $json = "[$i, $yvalue]";
-         $randomnum.push($json);
-    }
+         array_push($randomnum, $json);
+        }
+        echo json_encode($randomnum);
 ?>
