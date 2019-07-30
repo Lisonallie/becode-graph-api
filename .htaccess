@@ -1,4 +1,3 @@
-Options +FollowSymLinks -Multiviews
 RewriteEngine On
 
 RewriteRule ^generateRandomArray/([0-9]+) json.php?numbers=$1
